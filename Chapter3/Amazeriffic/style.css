@@ -1,52 +1,176 @@
-body {
-  background: #f9e933;
+body 
+{
+  margin: 0;
 }
 
-header, main, footer {
+header, main, footer 
+{
   min-width: 855px;
 }
 
-header .container, main .container, footer .container {
+header .container, main .container, footer .container 
+{
   max-width: 855px;
   margin: auto;
+  padding: 20px;
+}
+a 
+{
+  color: firebrick;
+}
+a:visited
+{
+  color: purple;
+}
+a:hover
+{
+  color: blue;
 }
 
-header {
+header 
+{
   background: white;
   overflow: auto;
+  border-bottom: 2px inset;
+  padding-bottom: 10px;
+  min-height: 150px;
 }
-
-header h1 {
+header .hdr
+{
   float: left;
   width: 570px;
+  font-family: 'Ubuntu', sans serif; 
+  font-size: 50px;
+  font-style: italic;
+  color: firebrick;
+  padding-top: 10px;
 }
-
-header nav {
+header nav 
+{
   float: right;
   width: 285px;
+  font-family: 'Droid sans', sans serif;
+  padding-top: 30px;
 }
 
-main {
+
+main 
+{
   background: white;
-  overflow: auto;
+  overflow: auto; 
 }
-
-main .left {
-  float: left;
-  width: 570px;
+main .left{
+     float: left;
+      width: 570px;
 }
-
-main .right {
+main .right
+{
   float: right;
   width: 285px;
 }
 
-footer .left {
+h2
+{
+  font-family: 'Ubuntu', sans serif; 
+  font-size: 30px;
+  color: firebrick;
+}
+main ol
+{
+  font-family: 'Droid sans', sans serif;  
+  padding-left: 0;
+}
+ol li 
+{
+  list-style-position: inside;
+}
+
+main p
+{
+  font-family: 'Droid sans', sans serif; 
+}
+
+h3 
+{
+  font-family: 'Ubuntu', sans serif; 
+}
+main ul
+{
+  font-family: 'Droid sans', sans serif; 
+}
+
+footer 
+{
+  padding-top: 10px;
+  background: #f9e933;
+  min-height: 160px;
+  width: 100%
+}
+
+footer .contact_us
+{
   float: left;
   width: 570px;
 }
-
-footer .sitemap {
+footer .site_map
+{
   float: right;
   width: 285px;
+}
+
+h4 
+{
+  font-family: 'Ubuntu', sans serif; 
+}
+footer p
+{
+  font-family: 'Droid sans', sans serif;
+  line-height: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+footer .title{
+  font-family: 'Droid sans', sans serif;
+  font-style: italic;
+  font-weight: bold;
+  color: firebrick;
+}
+footer ul{
+  font-family: 'Droid sans', sans serif;
+  font-size: 15px;
+  font-weight: bold;
+  width: 285px;
+  list-style-type: none;
+  padding-left: 0;
+  columns: 2;
+}
+ul li{
+  padding-bottom: 3px;
+  list-style-position: inside;
+}
+
+
+/*for signup.html using semantic UI*/
+.header_seg 
+{
+  height: 200px;
+}
+
+.main_seg 
+{
+  height: 500px;
+}
+
+.top_header 
+{
+  padding-top: 50px;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 60px;
+}
+
+.form_field 
+{
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
