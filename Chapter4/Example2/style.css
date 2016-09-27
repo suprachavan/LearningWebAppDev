@@ -72,7 +72,6 @@ main {
   padding: 5px;
   margin-bottom: 10px;
   border-radius: 5px;
-  background: lavender;
 }
 
 footer {
@@ -109,11 +108,32 @@ footer {
   margin-left: 5px;
 }
 
-#user1
+/*#user1
 {
   background: lavender;
 }
 #user2
 {
   background: salmon;
+}*/
+
+/*.comments p.user1 {
+  background:lavender;
+}
+.comments p.user2 {
+  background:gainsboro;
+}*/
+
+.comments p.user1:nth-of-type(2n){
+  background:lavender;
+}
+.comments p.user1:nth-of-type(2n+1){
+  background:salmon;
+}
+
+.comments p.user2:nth-of-type(2n){
+  background:red;
+}
+.comments p.user2:nth-of-type(2n+1){
+  background:blue;
 }

@@ -2,46 +2,46 @@
 
 
 var main = function () {
-    "use strict";
+    'use strict';
 
     var addCommentFromInputBox = function () {
-        var $new_comment;
-        var newId1 = "user1";
-        var newId2 = "user2";
+        var $newComment;
+        var newClass1 = 'user1';
+        var newClass2 = 'user2';
 
-        if ($(".comment-input input").val() !== "") {
-            $new_comment = $("<p>").text($(".comment-input input").val());
-            $new_comment.attr('id', newId1);
-            $new_comment.hide();  
-            $(".comments").append($new_comment);
-            $new_comment.fadeIn();
-            $(".comment-input input").val("");
+        if ($('.comment-input input').val() !== '') {
+            $newComment = $('<p class='+newClass1+'>').
+            text($('.comment-input input').val());
+            $newComment.hide();  
+            $('.comments').append($newComment);
+            $newComment.fadeIn();
+            $('.comment-input input').val('');
         }
-        if  ($(".comment-input2 input").val() !== "") {
-            $new_comment = $("<p>").text($(".comment-input2 input").val());
-            $new_comment.attr('id', newId2);
-            $new_comment.hide();
-            $(".comments").append($new_comment);
-            $new_comment.fadeIn();
-            $(".comment-input2 input").val("");
+        if  ($('.comment-input2 input').val() !== '') {
+            $newComment = $('<p class='+newClass2+'>').
+            text($('.comment-input2 input').val());
+            $newComment.hide();
+            $('.comments').append($newComment);
+            $newComment.fadeIn();
+            $('.comment-input2 input').val('');
         }
     };
 
-    $(".comment-input button").on("click", function (event) {
+    $('.comment-input button').on('click', function () {
         addCommentFromInputBox();
     });
 
-    $(".comment-input input").on("keypress", function (event) {
+    $('.comment-input input').on('keypress', function (event) {
         if (event.keyCode === 13) {
             addCommentFromInputBox();
         }
     });
 
-    $(".comment-input2 button").on("click", function (event) {
+    $('.comment-input2 button').on('click', function () {
         addCommentFromInputBox();
     });
 
-    $(".comment-input2 input").on("keypress", function (event) {
+    $('.comment-input2 input').on('keypress', function (event) {
         if (event.keyCode === 13) {
             addCommentFromInputBox();
         }
